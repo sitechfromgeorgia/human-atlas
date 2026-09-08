@@ -1,6 +1,7 @@
 import {createContext,useCallback,useContext,useEffect,useState,type ReactNode} from 'react';
 import en from '../locales/en.json';
 import ka from '../locales/ka.json';
+import anatomyKa from '../locales/anatomy.ka.json';
 
 export type Locale='en'|'ka';
 export type Messages=typeof en;
@@ -50,6 +51,14 @@ export function translate(key:MessageKey,vars?:MessageVars):string{
  return format(message,vars);
 }
 
+/** Anatomy overlay: Georgian part names keyed by FJ part id (locales/anatomy.ka.json). atlas.json stays the source of truth; unmapped ids fall back to the English name. */
+export const ANATOMY_OVERLAY:Record<string,string>=anatomyKa;
+
+/** Non-hook anatomy name resolver (scene hover etc.): ka overlay when locale is ka, English otherwise. */
+export function anatomyName(partId:string,enName:string):string{
+ return currentLocale==='ka'?(ANATOMY_OVERLAY[partId]??enName):enName;
+}
+
 interface I18nValue{locale:Locale;setLocale:(next:Locale)=>void;t:(key:MessageKey,vars?:MessageVars)=>string}
 const I18nContext=createContext<I18nValue>({locale:currentLocale,setLocale:()=>{},t:translate});
 
@@ -66,3 +75,9 @@ export function LocaleProvider({children}:{children:ReactNode}){
 }
 
 export function useT(){return useContext(I18nContext);}
+
+/** Hook anatomy name resolver: re-renders on locale change, ka overlay with English fallback. */
+export function useAnatomyName(){
+ const {locale}=useT();
+ return useCallback((partId:string,enName:string)=>locale==='ka'?(ANATOMY_OVERLAY[partId]??enName):enName,[locale]);
+}
