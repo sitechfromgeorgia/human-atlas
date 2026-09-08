@@ -1,5 +1,6 @@
 import {createContext,useCallback,useContext,useEffect,useState,type ReactNode} from 'react';
 import en from '../locales/en.json';
+import ka from '../locales/ka.json';
 
 export type Locale='en'|'ka';
 export type Messages=typeof en;
@@ -19,8 +20,8 @@ function detect():Locale{
  return typeof navigator!=='undefined'&&navigator.language?.toLowerCase().startsWith('ka')?'ka':'en';
 }
 
-/** ka.json lands in phase 3; until then ka resolves to the en bundle (per-key fallback below also applies). */
-const bundles:Record<Locale,Messages>={en,ka:en};
+/** ka.json provides the Georgian bundle; per-key fallback to en below covers any gaps. */
+const bundles:Record<Locale,Messages>={en,ka};
 let currentLocale:Locale=detect();
 
 function lookup(bundle:Messages,key:string):string|undefined{
