@@ -1,0 +1,135 @@
+{
+  "header": {
+    "eyebrow": "INTERACTIVE ANATOMY",
+    "title": "Human Atlas",
+    "modeledPieces": "{count} modeled pieces",
+    "datasetName": "BodyParts3D"
+  },
+  "a11y": {
+    "explorerPanels": "Explorer panels",
+    "searchAnatomy": "Search anatomy",
+    "aboutAtlas": "About this atlas",
+    "anatomicalLayers": "Anatomical layers",
+    "closeSystems": "Close systems",
+    "showSystem": "Show {system}",
+    "findAnatomy": "Find anatomy",
+    "closeSearch": "Close search",
+    "searchNamedStructures": "Search named anatomical structures",
+    "cameraControls": "Camera controls",
+    "pauseRotation": "Pause rotation",
+    "rotateBody": "Rotate body",
+    "resetViewAndLayers": "Reset view and layers",
+    "openSystemLayers": "Open system layers",
+    "assembleAndReset": "Assemble and reset",
+    "sceneCanvas": "Interactive human anatomy. Drag to orbit, pinch or scroll to zoom, and tap a structure to inspect it."
+  },
+  "search": {
+    "findStructure": "Find a structure",
+    "placeholder": "Heart, femur, cranial nerve…",
+    "noMatches": "No structures match your search.",
+    "pieceCount": "{count} {count, plural, one {piece} other {pieces}}",
+    "refineNote": "Showing up to 80 matches. Refine your search to find smaller structures.",
+    "startNote": "Start with a major organ, or search every named structure."
+  },
+  "panels": {
+    "systems": "Systems",
+    "presetAll": "All",
+    "presetSkeleton": "Skeleton",
+    "presetOrgans": "Organs",
+    "showOnlySystem": "Show only {system}",
+    "piecesVisible": "{count} pieces visible",
+    "hideAll": "Hide all"
+  },
+  "controls": {
+    "viewThreeQuarter": "three-quarter view",
+    "viewFront": "front view",
+    "viewSide": "side view",
+    "viewBack": "back view",
+    "autoRotate": "Auto rotate",
+    "reset": "Reset",
+    "captionSelected": "SELECTED STRUCTURE",
+    "captionInventory": "ANATOMICAL INVENTORY",
+    "captionSeparated": "SEPARATED STRUCTURES",
+    "captionDefault": "ADULT HUMAN · MALE",
+    "explodeAnatomy": "Explode anatomy",
+    "assembled": "Assembled",
+    "everyPiece": "Every piece",
+    "dragToPan": "Drag to pan",
+    "dragToOrbit": "Drag to orbit",
+    "pinchToZoom": "Pinch to zoom",
+    "tapToInspect": "Tap to inspect"
+  },
+  "common": {
+    "sourceAndCredits": "Source & credits"
+  },
+  "loading": {
+    "preparing": "Preparing the anatomy",
+    "progress": "{progress}% · Loading {count} pieces"
+  },
+  "errors": {
+    "catalogueLoadFailed": "The anatomy catalogue could not be loaded.",
+    "reloadViewer": "Reload viewer",
+    "webglUnavailable": "This browser could not start the 3D viewer. Please try a browser with WebGL enabled.",
+    "geometryAssemblyFailed": "Could not assemble anatomy geometry.",
+    "anatomyLoadFailed": "Could not load the anatomy.",
+    "contextLost": "The 3D session was paused by your device. Reload to continue.",
+    "fileLoadFailed": "An anatomy file could not be loaded.",
+    "fileIncomplete": "An anatomy file was incomplete. Please reload the viewer."
+  },
+  "details": {
+    "defaultSystemEyebrow": "ANATOMY",
+    "systemOverviewNote": "System overview · structure identified from source anatomy",
+    "atlasReference": "Atlas reference",
+    "selectedPieces": "Selected pieces",
+    "includedStructures": "Included structures",
+    "morePieces": "And {count} more modeled pieces.",
+    "viewAnatomicalSource": "View anatomical source",
+    "showSurrounding": "Show surrounding anatomy",
+    "isolateStructure": "Isolate structure",
+    "clearSelection": "Clear selection"
+  },
+  "about": {
+    "eyebrow": "SOURCE & SCOPE",
+    "title": "A body, revealed.",
+    "subtitle": "Explore the adult male reference anatomy from BodyParts3D.",
+    "datasetLabel": "Male · BodyParts3D",
+    "datasetStats": "2,234 individual meshes and 3,432 named concepts from an adult male reference anatomy.",
+    "scopeNote": "This reference does not contain every human structure or variation. Named concepts can contain multiple pieces; each source mesh is rendered once.",
+    "disclaimer": "Colors and system groupings are designed for exploration. The geometry is simplified for the web, and short explanations provide general educational context. This is an anatomical reference, not a diagnostic or surgical tool.",
+    "sourceHeading": "Source",
+    "licenseNotice": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.",
+    "datasetLicense": "Dataset license",
+    "originalGeometry": "Original geometry & metadata",
+    "sourcePublication": "Read the source publication"
+  },
+  "agent": {
+    "findToolDescription": "Find anatomical structures by name or source atlas identifier in this atlas.",
+    "inspectToolDescription": "Select an atlas concept in the 3D anatomy and open its visible detail panel.",
+    "errorObjectExpected": "Expected an object.",
+    "errorQueryRequired": "A nonempty query is required.",
+    "errorIdRequired": "An atlas identifier is required.",
+    "errorNotInAtlas": "That structure is not present in this atlas."
+  },
+  "ui": {
+    "breadcrumb": "breadcrumb",
+    "more": "More",
+    "closeToast": "Close toast",
+    "close": "Close",
+    "pagination": "pagination",
+    "goToPreviousPage": "Go to previous page",
+    "goToNextPage": "Go to next page",
+    "morePages": "More pages",
+    "previous": "Previous",
+    "next": "Next",
+    "loading": "Loading",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "toggleSidebar": "Toggle Sidebar",
+    "sidebarTitle": "Sidebar",
+    "sidebarDescription": "Displays the mobile sidebar.",
+    "commandPalette": "Command Palette",
+    "commandPlaceholder": "Search for a command to run...",
+    "scrollToEnd": "Scroll to end",
+    "scrollToStart": "Scroll to start"
+  }
+}
